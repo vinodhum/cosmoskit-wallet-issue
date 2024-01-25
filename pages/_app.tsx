@@ -4,12 +4,12 @@ import type { AppProps } from 'next/app'
 import { wallets as cosmostationWallets } from "@cosmos-kit/cosmostation";
 // import { wallets as finWallets } from "@cosmos-kit/fin";
 import { wallets as keplrWallets } from "@cosmos-kit/keplr";
-// import { wallets as leapWallets } from "@cosmos-kit/leap";
+import { wallets as leapWallets } from "@cosmos-kit/leap";
 // import { wallets as snapWallet } from "@cosmos-kit/leap-metamask-cosmos-snap";
 // import { wallets as ledgerWallets } from "@cosmos-kit/ledger";
 import { ChainProvider, defaultModalViews } from "@cosmos-kit/react";
 // import { wallets as shellWallets } from "@cosmos-kit/shell";
-// import { wallets as stationWallets } from "@cosmos-kit/station";
+import { wallets as stationWallets } from "@cosmos-kit/station";
 // import { wallets as vectisWallets } from "@cosmos-kit/vectis";
 import { Chain } from "@chain-registry/types";
 import { Decimal } from "@cosmjs/math";
@@ -27,6 +27,8 @@ export default function App({ Component, pageProps }: AppProps) {
         wallets={[
           ...keplrWallets,
           ...cosmostationWallets,
+          ...stationWallets,
+          ...leapWallets,
 
         ]}
         throwErrors={false}

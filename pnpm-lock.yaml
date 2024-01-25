@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@cosmjs/math':
     specifier: ^0.32.2
@@ -12,26 +8,26 @@ dependencies:
     specifier: ^0.32.2
     version: 0.32.2
   '@cosmos-kit/coin98':
-    specifier: ^2.6.1
-    version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
+    specifier: ^2.6.7
+    version: 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
   '@cosmos-kit/core':
-    specifier: ^2.8.1
-    version: 2.8.1
+    specifier: ^2.8.7
+    version: 2.8.7
   '@cosmos-kit/cosmostation':
-    specifier: ^2.6.1
-    version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0)
+    specifier: ^2.6.7
+    version: 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0)
   '@cosmos-kit/fin':
-    specifier: ^2.6.1
-    version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
+    specifier: ^2.6.7
+    version: 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
   '@cosmos-kit/ins':
     specifier: ^2.1.2
     version: 2.1.2
   '@cosmos-kit/keplr':
-    specifier: ^2.6.1
-    version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+    specifier: ^2.6.7
+    version: 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
   '@cosmos-kit/leap':
-    specifier: ^2.6.1
-    version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0)
+    specifier: ^2.6.7
+    version: 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0)
   '@cosmos-kit/leap-metamask-cosmos-snap':
     specifier: ^0.5.1
     version: 0.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
@@ -39,14 +35,14 @@ dependencies:
     specifier: ^2.6.1
     version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
   '@cosmos-kit/react':
-    specifier: ^2.10.1
-    version: 2.10.1(@interchain-ui/react@1.19.3)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.10.7
+    version: 2.10.7(@interchain-ui/react@1.19.3)(react-dom@18.2.0)(react@18.2.0)
   '@cosmos-kit/shell':
     specifier: ^2.6.1
     version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
   '@cosmos-kit/station':
-    specifier: ^2.5.1
-    version: 2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2)
+    specifier: ^2.5.7
+    version: 2.5.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2)
   '@cosmos-kit/vectis':
     specifier: ^2.6.1
     version: 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
@@ -111,12 +107,24 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
 
+  /@chain-registry/client@1.18.4:
+    resolution: {integrity: sha512-q06EeCQahVPTqf9n0nRw2/bL+tZArltvGH+fllsXfwLa6vhc264McFJRMownhiYJvhFaI/WChMeNmjFOaMIABA==}
+    dependencies:
+      '@babel/runtime': 7.23.8
+      '@chain-registry/types': 0.17.1
+      '@chain-registry/utils': 1.17.3
+      bfs-path: 1.0.2
+      cross-fetch: 3.1.8
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@chain-registry/cosmostation@1.26.0:
     resolution: {integrity: sha512-MmjThpQ0U0EJF66UJzPy67iKC9hY7ljrpGtQOPfeYGB/lUlKZTsE/mgF2XkKGUf7wJK8LugOqU5Zul7C1/ZA4Q==}
     dependencies:
       '@babel/runtime': 7.23.8
       '@chain-registry/types': 0.17.1
-      '@chain-registry/utils': 1.17.0
+      '@chain-registry/utils': 1.17.3
       '@cosmostation/extension-client': 0.1.15
     dev: false
 
@@ -125,7 +133,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.8
       '@chain-registry/types': 0.17.1
-      '@chain-registry/utils': 1.17.0
+      '@chain-registry/utils': 1.17.3
       '@cosmostation/extension-client': 0.1.15
     dev: false
 
@@ -150,8 +158,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.8
 
-  /@chain-registry/utils@1.17.0:
-    resolution: {integrity: sha512-MNIfpFM8rF1Gex+LhmuHgUElLbjz2vgmjI9qpRl9MMuQUSndu/NVhCDWcgvGNVKCD6woR6ohD9UIs9n0/Q91AA==}
+  /@chain-registry/utils@1.17.3:
+    resolution: {integrity: sha512-PmpYJ8pG8YUMVNKDl560Cqad5tyJT0gfgXRt8NmRoxbFsFSzvVeJTAod9m/puSyCQNxODZN/SvMiHwL9LQlSqg==}
     dependencies:
       '@babel/runtime': 7.23.8
       '@chain-registry/types': 0.17.1
@@ -358,8 +366,8 @@ packages:
     resolution: {integrity: sha512-Gg5t+eR7vPJMAmhkFt6CZrzPd0EKpAslWwk5rFVYZpJsM8JG5KT9XQ99hgNM3Ov6ScNoIWbXkpX27F6A9cXR4Q==}
     dev: false
 
-  /@cosmos-kit/coin98-extension@2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
-    resolution: {integrity: sha512-bFxtVYNFBsKi56qmkjjIyZOvSSWO856ELmhWo7D4tjXSRgkQfpIVtpocqWUQBighe/d8DS8vNmmo7jqXM7VggQ==}
+  /@cosmos-kit/coin98-extension@2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-f55xs+CgK8YacyW6iIeHp2ni1fOpJCk5Gu8tj1ig8txAQ8gefmTfVmYcQtCFj6H1BodRYE+EblvKrIeWnmDYpw==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -368,7 +376,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       cosmjs-types: 0.9.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -385,14 +393,15 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/coin98@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
-    resolution: {integrity: sha512-uhsy2dV29sgkzLC5128C/vQFS5lcQbSHILuHxwqAUcDixvKt8Bh6nhHmARzv6tMUuDxz4OwpMBEvoOKqSNmiag==}
+  /@cosmos-kit/coin98@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-Qakn5bUZGnzMnLFWTbzSCjafEALXsrXV8nrAcK2PZ2erjMUW1gWMm2pCs5FTKqOdWY3ArZpb4gRFms67y0m44g==}
     dependencies:
-      '@cosmos-kit/coin98-extension': 2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
+      '@cosmos-kit/coin98-extension': 2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -411,13 +420,15 @@ packages:
       - bufferutil
       - cosmjs-types
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/core@2.8.1:
-    resolution: {integrity: sha512-D29yx920XrNn6d7R5nA7m/8Fv+JizuQKE3mCxWR1e2dNZbjEF2AOdyzFnQ7gZnH+JtIFHRKq/EDnmrWlBR6/rA==}
+  /@cosmos-kit/core@2.8.7:
+    resolution: {integrity: sha512-onj9h39bWNRkCHr66JZq9neibiwPN3R0I1TiiSkbYw6qf0+IGdPKa0qgxFVDhNqvSQaVxmECMvBlnA/ZNHFFUw==}
     dependencies:
+      '@chain-registry/client': 1.18.4
       '@chain-registry/types': 0.17.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/cosmwasm-stargate': 0.32.2
@@ -443,12 +454,13 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/cosmostation-extension@2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
-    resolution: {integrity: sha512-twRXZ5eyFl6edLJjVczG7E476FPPReoJ13O/HLhbNdbl3o/8LFeYcIGuPmE8tx8Frc1wLEzwpT1qF0iSfRfv/Q==}
+  /@cosmos-kit/cosmostation-extension@2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-1RYeVb7eebQPaU/I5Gy/ewWt/RjSPQ2a/ZbYEjxXO2l1MrRJlJY0woZAeo6ZzIem7hUhJbPNtOTWGpqiMzefVA==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -457,7 +469,7 @@ packages:
       '@chain-registry/cosmostation': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       cosmjs-types: 0.9.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -474,16 +486,17 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/cosmostation-mobile@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
-    resolution: {integrity: sha512-IaLZddUa8UfSR3KxG9pAZYfe+8xibXYJp8USWPN4I5I3+iiSq3SHVVgT60umoRDwC3J+p26+PuSBykqkzBzNbQ==}
+  /@cosmos-kit/cosmostation-mobile@2.6.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0):
+    resolution: {integrity: sha512-+sLBYx3WPRYqZIdYdxpMQkfWfoPZ/CRIOLQm88jK8iBcVs2j1e+vBNLZ/PwkT2XzpxFeDpVCt71HkfGmE+BnMA==}
     dependencies:
       '@chain-registry/cosmostation': 1.26.0
-      '@cosmos-kit/core': 2.8.1
-      '@cosmos-kit/walletconnect': 2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmos-kit/core': 2.8.7
+      '@cosmos-kit/walletconnect': 2.5.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -493,7 +506,6 @@ packages:
       - '@azure/storage-blob'
       - '@capacitor/preferences'
       - '@cosmjs/amino'
-      - '@cosmjs/proto-signing'
       - '@netlify/blobs'
       - '@planetscale/database'
       - '@react-native-async-storage/async-storage'
@@ -507,11 +519,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/cosmostation@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0):
-    resolution: {integrity: sha512-GKSIib3Oyt9FXKiIUlhw1dM9DpuC91OnICKmNkTbQrSg6hgfDgkLi0KkhOh+ubWJ10EP4SNCRFaFd2B3kg3fOQ==}
+  /@cosmos-kit/cosmostation@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-IqBIYH0L82AZuomZmW6hP8Z6z/2aweq4TEDubWuC+MehRYN/9K2/dF12Y+RPcYzAWwPHZOvddwRMpKLTpR6UMg==}
     dependencies:
-      '@cosmos-kit/cosmostation-extension': 2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
-      '@cosmos-kit/cosmostation-mobile': 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmos-kit/cosmostation-extension': 2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
+      '@cosmos-kit/cosmostation-mobile': 2.6.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -536,8 +548,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/fin-extension@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
-    resolution: {integrity: sha512-IAZchUkUbv1u852NslLASIS6vNAeVX+Fyp/y/25gj1k1OiHLUFTK9CI38oApsO3sknfnkMQ5CCFHOlqyGbcR+g==}
+  /@cosmos-kit/fin-extension@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
+    resolution: {integrity: sha512-1Oep44GNWeQ0yIOQVDSkZRH40BzoKaPvAXQoheqYewp62DOle5rc0Ao4iZSlYfPZluZCyaHoRgPttXyj9CPWxw==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -545,7 +557,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -561,14 +573,15 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/fin@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
-    resolution: {integrity: sha512-/0J5YNOMsWlOOgp4PFXZmlau9xBtYycTuvQDFiBaarlZH3ljagiONK88XxALL0Ofn2cXlzBC/us9RF0ugPsqlQ==}
+  /@cosmos-kit/fin@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
+    resolution: {integrity: sha512-6tk67VjfhJjJggA1BcNpP8d2rlv/qwOWQJFCxab8RvlaR5OV9QoosEq5FtphQicaUO+2R7Xc7DrkCwo3UYgeJQ==}
     dependencies:
-      '@cosmos-kit/fin-extension': 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
+      '@cosmos-kit/fin-extension': 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -586,6 +599,7 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -596,8 +610,8 @@ packages:
       '@babel/runtime': 7.11.2
     dev: false
 
-  /@cosmos-kit/keplr-extension@2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
-    resolution: {integrity: sha512-5WM+70x7Ct+7NOTSJ2jbsPunu8bgKrnJyJIaeiADDfKIuWxt5/C3fdaUdsV/KKo5nhBd24V4en//5paawC/k8Q==}
+  /@cosmos-kit/keplr-extension@2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
+    resolution: {integrity: sha512-1tuIFDEqZ+NdwzW9zcU7itO0GxdsEC21W9n0dE+KkFqlvLEvFmCHcmecm7xpvW/Ih2Ci3JQkA1GG4lScSaOKvA==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -605,7 +619,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@keplr-wallet/types': 0.12.60
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -622,12 +636,13 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/keplr-mobile@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
-    resolution: {integrity: sha512-cAem0+HmmVzhPX8rYuDB80jJ3vMA/HWs9QSmHU2/3HDf/Jkv0eoc3C4MixhSEnnPBr08zwc0j+IRc9FUtrld8g==}
+  /@cosmos-kit/keplr-mobile@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
+    resolution: {integrity: sha512-kMqJqD/SmRqLTBgtcMLKXhczMz10XuSG5TkjOcOuKyANHFq0IelG/eAMfTDK/cJ5I5rREUGO7Qc+fYuuKCgFZg==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -635,8 +650,8 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
-      '@cosmos-kit/walletconnect': 2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmos-kit/core': 2.8.7
+      '@cosmos-kit/walletconnect': 2.5.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -658,11 +673,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/keplr@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
-    resolution: {integrity: sha512-xYcSHbOtChIgK8popI6cVe5L+hNVaeNmbR2NNa3v3Lt3N6XwfUHOB2HRFBtnSHDyjJAaECVPnnwlbMzNfPCkfQ==}
+  /@cosmos-kit/keplr@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
+    resolution: {integrity: sha512-YT0li9jot1F3YIDrz7w2fuocJBk/4Lh4I+pTuKLhuMYWT8yA4qtGg5429jYSppboyXxDI4pjyA9srlMgdguNcQ==}
     dependencies:
-      '@cosmos-kit/keplr-extension': 2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
-      '@cosmos-kit/keplr-mobile': 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmos-kit/keplr-extension': 2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
+      '@cosmos-kit/keplr-mobile': 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -686,8 +701,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/leap-extension@2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
-    resolution: {integrity: sha512-z6L7oCOiBiYPUAvZclQ1njq8Fzp87sJL7G6EiI1kauG2xjVIqHk7DI9ffvxP4eaxRMG9MpsqIxJO9Afowc8Acw==}
+  /@cosmos-kit/leap-extension@2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2):
+    resolution: {integrity: sha512-xDehr/5Xdt59aMnpX4a/D8eSaOwy3/JFvd3FWwuSFB9viRU5aYoGXPKAP5mNKBxSz4Lpt+zfAQ30HqWWHx9JJQ==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -695,7 +710,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -711,6 +726,7 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -725,7 +741,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@leapwallet/cosmos-snap-provider': 0.1.25
       '@metamask/providers': 11.1.2
       cosmjs-types: 0.9.0
@@ -744,16 +760,51 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/leap-mobile@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
-    resolution: {integrity: sha512-vltgCSuL2NO+xGruBaNkFk1HTwUIYTEM2Ajjbltim3N6mkJveQZ6nlnd9leQ2BU8d/HhQf1DD1StFKRpvOVpWQ==}
+  /@cosmos-kit/leap-metamask-cosmos-snap@0.5.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-7xq/lzwMXF1fA/S1jWSwRdDZeIeSmZBPvXTHq46GiHBJWz7WBOR3udbJz1/ZfEIg6aoTvbMv+pec12+VnXcuRg==}
+    peerDependencies:
+      '@cosmjs/amino': '>=0.32.2'
+      '@cosmjs/proto-signing': '>=0.32.2'
+      cosmjs-types: '>=0.9.0'
     dependencies:
       '@chain-registry/keplr': 1.28.0
-      '@cosmos-kit/core': 2.8.1
-      '@cosmos-kit/walletconnect': 2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmjs/amino': 0.32.2
+      '@cosmjs/proto-signing': 0.32.2
+      '@cosmos-kit/core': 2.8.7
+      '@leapwallet/cosmos-snap-provider': 0.1.25
+      '@metamask/providers': 11.1.2
+      cosmjs-types: 0.9.0
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@react-native-async-storage/async-storage'
+      - '@upstash/redis'
+      - '@vercel/kv'
+      - bufferutil
+      - debug
+      - encoding
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /@cosmos-kit/leap-mobile@2.6.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0):
+    resolution: {integrity: sha512-CUwzqYORlpO4kSJvtk9X5oKwKv5vDMe3bktPVNf7kQb/QglFLGQNlLa4uIp8hbmK7+AnRyIIVdaKc/I9a0YtMQ==}
+    dependencies:
+      '@chain-registry/keplr': 1.28.0
+      '@cosmos-kit/core': 2.8.7
+      '@cosmos-kit/walletconnect': 2.5.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -763,7 +814,6 @@ packages:
       - '@azure/storage-blob'
       - '@capacitor/preferences'
       - '@cosmjs/amino'
-      - '@cosmjs/proto-signing'
       - '@netlify/blobs'
       - '@planetscale/database'
       - '@react-native-async-storage/async-storage'
@@ -777,12 +827,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/leap@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0):
-    resolution: {integrity: sha512-/cmhrhLkEcnL04bE67uE0MOeJ09i7acea4aY7ioi8GZhzAcLZ3WVn2C/Wsq8qGCYs+OYFnKcAkknpGh9r1ozgg==}
+  /@cosmos-kit/leap@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)(cosmjs-types@0.9.0):
+    resolution: {integrity: sha512-V8/qGcLr4JZ1XhtTmUT5BckRRRUQhYvFw5CbM90rOFHiaSC5nsLNhr2bz5fbuHmNUKR+kriWXGZgaNtv6vdrZw==}
     dependencies:
-      '@cosmos-kit/leap-extension': 2.7.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
-      '@cosmos-kit/leap-metamask-cosmos-snap': 0.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
-      '@cosmos-kit/leap-mobile': 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0)
+      '@cosmos-kit/leap-extension': 2.7.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)
+      '@cosmos-kit/leap-metamask-cosmos-snap': 0.5.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(cosmjs-types@0.9.0)
+      '@cosmos-kit/leap-mobile': 2.6.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -815,7 +865,7 @@ packages:
     dependencies:
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@ledgerhq/hw-app-cosmos': 6.29.1
       '@ledgerhq/hw-transport-webhid': 6.28.1
       '@ledgerhq/hw-transport-webusb': 6.28.1
@@ -834,18 +884,19 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/react-lite@2.6.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-LswmTIHjkFFhh9lZtUf8kunHG9KFSXvVfucdnC5IkvZ32E7VMxaKEX1oH8LpTiT83VUSLHQ0Mmj+Gl1IP3xFpg==}
+  /@cosmos-kit/react-lite@2.6.7(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mV0EgD2PSZmRT4C954QA0DCL3kVDZnRBmGErM3mVGFemAGu01JSq7ObKkgqhTMzm0z/+ax5JU02twWlOaykM/Q==}
     peerDependencies:
       react: ^18
       react-dom: ^18
     dependencies:
       '@chain-registry/types': 0.17.0
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -863,20 +914,21 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/react@2.10.1(@interchain-ui/react@1.19.3)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-XUB3F3D8ZOBPkwpjCQvqcE8go558mqDSjqK0Dw2wKUu88Py0fgZM17VH/r99mr+4fDj3IpF3EHQoZT1Vsyulmg==}
+  /@cosmos-kit/react@2.10.7(@interchain-ui/react@1.19.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-9Wuv9BUGTejwgzvwqh5d1KvXRct8U2lxZqn1p9Ssy5e9aeklFFEWJ4vSyP0ebu37ktH2swtV1tPkm3xeZ14w/Q==}
     peerDependencies:
       '@interchain-ui/react': ^1.16.6
       react: ^18
       react-dom: ^18
     dependencies:
       '@chain-registry/types': 0.17.0
-      '@cosmos-kit/core': 2.8.1
-      '@cosmos-kit/react-lite': 2.6.1(react-dom@18.2.0)(react@18.2.0)
+      '@cosmos-kit/core': 2.8.7
+      '@cosmos-kit/react-lite': 2.6.7(react-dom@18.2.0)(react@18.2.0)
       '@interchain-ui/react': 1.19.3(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@react-icons/all-files': 4.1.0(react@18.2.0)
       react: 18.2.0
@@ -896,6 +948,7 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -909,7 +962,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -925,6 +978,7 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -950,12 +1004,13 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/station-extension@2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2):
-    resolution: {integrity: sha512-PQHn9TEl0o9jju4glOASOECQDZO3EhdYk+UgffrWkC76K7q1ZKyVsZryVFsadZDxQUeSdgfMnmvof5Y2kajPRA==}
+  /@cosmos-kit/station-extension@2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2):
+    resolution: {integrity: sha512-Vl53WATI2mbca3zK1rnXC4qqjhWhwxfFATPxJXziEKV29BEvxMvdS833K4K+i5C4Up2rZOdqjrd85DC+OdYjng==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
       '@cosmjs/proto-signing': '>=0.32.2'
@@ -963,7 +1018,7 @@ packages:
       '@chain-registry/types': 0.17.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@terra-money/feather.js': 1.2.1
       '@terra-money/station-connector': 1.0.16(@cosmjs/amino@0.32.2)(@terra-money/feather.js@1.2.1)(axios@0.27.2)
       '@terra-money/wallet-types': 3.11.2(@terra-money/terra.js@3.1.10)
@@ -984,14 +1039,15 @@ packages:
       - axios
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/station@2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2):
-    resolution: {integrity: sha512-LZS5sV5aJJqM9AKPiB8HAoTvA6Let9PXzrO3Xcgu+E6K1lYPVBGIUQ9sXiKoEWKm4XNxm8f/HHSye+VJ8txqXA==}
+  /@cosmos-kit/station@2.5.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2):
+    resolution: {integrity: sha512-PnR6hw03mNw/FQWLFfVl0XuL7bE0t8L/ZeUxCpYxANL0Rl5zCNWSA76a8gRlDNCXjY8jrtka/Brv96e8LO4aCg==}
     dependencies:
-      '@cosmos-kit/station-extension': 2.6.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2)
+      '@cosmos-kit/station-extension': 2.6.7(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@terra-money/terra.js@3.1.10)(axios@0.27.2)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1011,6 +1067,7 @@ packages:
       - axios
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -1024,7 +1081,7 @@ packages:
       '@chain-registry/keplr': 1.28.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1040,6 +1097,7 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
@@ -1065,20 +1123,20 @@ packages:
       - '@vercel/kv'
       - bufferutil
       - debug
+      - encoding
       - supports-color
       - utf-8-validate
     dev: false
 
-  /@cosmos-kit/walletconnect@2.5.1(@cosmjs/amino@0.32.2)(@cosmjs/proto-signing@0.32.2)(@walletconnect/types@2.11.0):
-    resolution: {integrity: sha512-pbuffcCsQFFVnkVDDq8UHuhjt6613EK9oB9+OwannGw5A2OMkKV33jwAW8JRo2yxms1Kile+nhbJm1tr9Cj+KQ==}
+  /@cosmos-kit/walletconnect@2.5.7(@cosmjs/amino@0.32.2)(@walletconnect/types@2.11.0):
+    resolution: {integrity: sha512-vSrm9iV+C05zgUVsOvpDeK7BlfJTNvkOYqkPw0mij55e2PYoSn9TYfXzc2GLeVOc34xKKnpIPCqn8Cnphbh/ig==}
     peerDependencies:
       '@cosmjs/amino': '>=0.32.2'
-      '@cosmjs/proto-signing': '>=0.32.2'
       '@walletconnect/types': 2.11.0
     dependencies:
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@walletconnect/sign-client': 2.11.0
       '@walletconnect/types': 2.11.0
       '@walletconnect/utils': 2.11.0
@@ -1114,7 +1172,7 @@ packages:
       '@chain-registry/types': 0.17.0
       '@cosmjs/amino': 0.32.2
       '@cosmjs/proto-signing': 0.32.2
-      '@cosmos-kit/core': 2.8.1
+      '@cosmos-kit/core': 2.8.7
       '@keplr-wallet/cosmos': 0.12.60
       '@solana/web3.js': 1.89.0
       '@toruslabs/eccrypto': 2.2.1
@@ -4965,6 +5023,10 @@ packages:
     resolution: {integrity: sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==}
     dev: false
 
+  /bfs-path@1.0.2:
+    resolution: {integrity: sha512-KTKx2JJtAAAT7C/rJYDXXWA2VLPycAS4kwFktKsxUo0hj4UTtw/Gm5PJuY7Uf3xSlIQNo7HRCSWei2ivncVwbQ==}
+    dev: false
+
   /big-integer@1.6.52:
     resolution: {integrity: sha512-QxD8cf2eVqJOOz63z6JIN9BzvVs/dlySa5HGSBH5xtR8dPteIRQnBxxKqkNTiT6jbDTF6jAfrd4oMcND9RGbQg==}
     engines: {node: '>=0.6'}
@@ -5333,6 +5395,14 @@ packages:
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
       sha.js: 2.4.11
+    dev: false
+
+  /cross-fetch@3.1.8:
+    resolution: {integrity: sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==}
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /cross-spawn@7.0.3:
@@ -8682,3 +8752,7 @@ packages:
       react: 18.2.0
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
